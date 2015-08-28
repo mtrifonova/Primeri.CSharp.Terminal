@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="Hello_Aula\Hello_Aula.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hello_Aula\Program.cs">
+    <Files>
+      <File FileName="Hello_Aula\Program.cs" Line="10" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
