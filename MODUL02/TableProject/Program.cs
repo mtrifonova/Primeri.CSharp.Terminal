@@ -3,7 +3,12 @@
 namespace TableProject
 {
 	class MainClass
+
 	{
+
+		enum ti  { ime=0, familia, godini };
+		// при колони се използва при редове не ...Когато ми трябва фамилия не трябва да помня че е 2 колона пиша ti.familia
+
 		public static void Main (string[] args)
 		{
 
@@ -12,19 +17,18 @@ namespace TableProject
 		string[,] table = new string[2, 3];
 
 		//Въвеждане на първи ред
-			 	
-			table[0, 0] ="Лора"; table[0, 1] =" Бойкова";  table[0, 2] =" 17";
+		
+			table [0, (int) ti.ime] = "Лора"; table [0,(int) ti.familia] = "Бойкова";  table [0, (int) ti.godini] = "16";
+		
+			//Въвеждане на втори ред
 
-  	  //Въвеждане на втори ред
+			table [0, (int) ti.ime] = "Бойко "; table [0,(int) ti.familia] = "Трифонов";  table [0, (int) ti.godini] = "45";
 
-		table[1 ,0] ="Бойко"; table[1, 1] ="  Трифонов";  table[1, 2]  ="45";
+		 Console.WriteLine(" Кой ред искате да видите : " );
 
-			//	Печат
-			Console.WriteLine(" Кой ред искате да видите : " );
+			int _index = Convert.ToInt32(Console.ReadLine()) -1 ;  // индекса е цял тип.Понеже в броенето 0 е първи ред пишим -1 
 
-			int _index = Convert.ToInt32 (Console.ReadLine()) -1 ;  // индекса е цял тип.Понеже в броенето 0 е първи ред пишим -1 
-
-			Console.WriteLine((table[_index,0])[0] + "." + table[ _index, 1] + " , " +table[ _index, 2] + " г.");
+		Console.WriteLine((table[_index, (int)  ti.ime])[0] + "." + table[ _index, (int) ti.familia] + " , " +  table[ _index,(int)  ti.godini] + " г.");
 			 
 		}
 	}
