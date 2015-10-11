@@ -18,18 +18,20 @@ namespace TableProject
 
 		//Въвеждане на първи ред
 		
-			table [0, (int) ti.ime] = "Лора"; table [0,(int) ti.familia] = "Бойкова";  table [0, (int) ti.godini] = "16";
+			table [0, (int) ti.ime] = "Лора"; table [0, (int) ti.familia] = "Бойкова";  table [0, (int) ti.godini] = "16";
 		
 			//Въвеждане на втори ред
 
-			table [0, (int) ti.ime] = "Бойко "; table [0,(int) ti.familia] = "Трифонов";  table [0, (int) ti.godini] = "45";
+			table [1, (int) ti.ime] = "Бойко "; table [1,(int) ti.familia] = "Трифонов";  table [1, (int) ti.godini] = "45";
 
-		 Console.WriteLine(" Кой ред искате да видите : " );
+		    Console.WriteLine(" Кой ред искате да видите : " );
 
-			int _index = Convert.ToInt32(Console.ReadLine()) -1 ;  // индекса е цял тип.Понеже в броенето 0 е първи ред пишим -1 
-
-		Console.WriteLine((table[_index, (int)  ti.ime])[0] + "." + table[ _index, (int) ti.familia] + " , " +  table[ _index,(int)  ti.godini] + " г.");
+		     int _index = Convert.ToInt32(Console.ReadLine()) -1 ;  // индекса е цял тип.Понеже в броенето 0 е първи ред пишим -1 
 			 
+		      Console.WriteLine((table[_index, (int)  ti.ime])[0] + "." + table[ _index, (int) ti.familia] + " , " +  table[ _index,(int)  ti.godini] + " г.");
+
+			Console.ReadKey ();
+
 		}
 	}
 }
