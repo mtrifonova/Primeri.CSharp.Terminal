@@ -15,16 +15,27 @@ namespace BoolExplore
 
 			int _ui = Convert.ToInt32(Console.ReadLine());  // индекс за това кой елемент от масива искаме
 
-			bool _check01 = _ui <= _i.Length;    // проверка 
-
+			bool _check01 = _ui <= _i.Length;    // проверка на _ui дали е по-малко от дължината 3 или = 3
+		 
 			bool _check02 = _ui > 0;               // проверка 
 
+			bool _exp01 = _check01 && _check02;  // Логическо И -&&  трябва и двете да са истина
 
-			Console.WriteLine ( _i [_ui - 1 ] );    // пишем -1 понеже C# броенето е от 0 
+			bool _exp02 = _check01 || _check02;  // Логическо Или -|| поне едното да е  истина
 
-			Console.WriteLine (_check01);
+			bool _exp03 = !_check01;   // Отрицание
 
-			Console.WriteLine (_check02);	
+			Console.WriteLine ("Логическо И && :  " + _exp01.ToString());
+
+			Console.WriteLine ("Логическо Или -||  :  " + _exp02.ToString());
+
+			Console.WriteLine (" Отрицание  :  " + _exp03.ToString());
+
+			//Console.WriteLine ( _i [_ui - 1 ] );    // пишем -1 понеже C# броенето е от 0 
+
+			//Console.WriteLine (_check01);
+
+			//Console.WriteLine (_check02);	
 		}
 	}
 }
