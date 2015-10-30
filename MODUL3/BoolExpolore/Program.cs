@@ -17,9 +17,17 @@ namespace BoolExpolore
 
 			bool _check02 = _ui > 0 ;
 
-			Console.WriteLine ( _check01 );
-			Console.WriteLine ( _check02 );
-			Console.WriteLine ( _i [ _ui- 1 ] );
+			bool _exp01 = _check01 && _check02; // Логическо И то връща стойност истина ако и двете променливи са истина / true/
+
+			bool _exp02 = _check01 || _check02; // Логическо ИЛИ  то връща стойност истина ако поне едната променлива е  истина / true
+
+			bool _exp03 = !_check01;            // Логическо Отрицание.  Ако е лъжа дава истина, ако е истина дава лъжа
+
+			Console.WriteLine ( "Логическо И   :  " + _exp01.ToString() );
+
+			Console.WriteLine (" Логическо ИЛИ :  " + _exp02.ToString() );
+
+			Console.WriteLine ( " Отрицание  на : " + _check01.ToString() + ": " + _exp03);
 		}
 	}
 }
