@@ -11,35 +11,26 @@ namespace BoolExpolore
 
 			int[] _i = new int[] { 4, 3, 2 };
 
-			Console.WriteLine( " Въведи индекс:  ");
+	    	int  _ui = 0;   //Convert.ToInt32 (Console.ReadLine ());
+			string  _input = "0";
+			Console.Write ("Моля въведети индекс:   ");
+			_input = Console.ReadLine ();
+			bool _check01 = int.TryParse (_input, out _ui);
+			bool _check02 = _ui <= _i.Length;
+			bool _check03 = _ui > 0;
 
-			int _ui = Convert.ToInt32 (Console.ReadLine ());
-
-//			bool _check01 = _ui <= _i.Length;  // правим проверка дали въведената променлива е <= от дължината на масива
-//
-//			bool _check02 = _ui > 0 ;
-//
-//			bool _exp01 = _check01 && _check02; // Логическо И то връща стойност истина ако и двете променливи са истина / true/
-//
-//			bool _exp02 = _check01 || _check02; // Логическо ИЛИ  то връща стойност истина ако поне едната променлива е  истина / true
-//
-//			bool _exp03 = !_check01;            // Логическо Отрицание.  Ако е лъжа дава истина, ако е истина дава лъжа
-//
-//			Console.WriteLine ( "Логическо И   :  " + _exp01.ToString() );
-//
-//			Console.WriteLine (" Логическо ИЛИ :  " + _exp02.ToString() );
-//
-//			Console.riteLine ( " Отрицание  на : " + _check01.ToString() + ": " + _exp03);
-			if (_ui > 0 && _ui <= _i.Length) {
+			if ( _check01 && _check02 && _check03) {
 				Console.WriteLine (_i [_ui - 1]);
-			} else { if (_ui > _i.Length) {
-					Console.WriteLine (
-						"индекса е прекалено голям\n\n\n");	}
+			     }  if (!_check01) {
+				     	Console.WriteLine("индекса трябва да е цяло число\n\n\n");	    
+		          	}
 				
-			 if (_ui <= 0 ) {
+			        if (!_check02 ) {
 				
-					Console.WriteLine (
-						"индекса е прекалено малък\n\n\n");	} }
+					              Console.WriteLine ("индекса е прекалено голям\n\n\n");	} 
+				if (!_check03 ) {
+
+				Console.WriteLine ("индекса е прекалено малък\n\n\n"); } 
+			}
 		}
-	}
 }	   
