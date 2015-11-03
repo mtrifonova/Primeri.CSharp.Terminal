@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MODUL3", "MODUL3\MODUL3.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolExpolore", "BoolExpolore\BoolExpolore.csproj", "{A5C2486D-D04F-4003-8A73-761504227FB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolExplore2", "BoolExplore2\BoolExplore2.csproj", "{CECCA802-B463-43D8-B367-B604A3D87BA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +21,9 @@ Global
 		{A5C2486D-D04F-4003-8A73-761504227FB2}.Debug|x86.Build.0 = Debug|x86
 		{A5C2486D-D04F-4003-8A73-761504227FB2}.Release|x86.ActiveCfg = Release|x86
 		{A5C2486D-D04F-4003-8A73-761504227FB2}.Release|x86.Build.0 = Release|x86
+		{CECCA802-B463-43D8-B367-B604A3D87BA9}.Debug|x86.ActiveCfg = Debug|x86
+		{CECCA802-B463-43D8-B367-B604A3D87BA9}.Debug|x86.Build.0 = Debug|x86
+		{CECCA802-B463-43D8-B367-B604A3D87BA9}.Release|x86.ActiveCfg = Release|x86
+		{CECCA802-B463-43D8-B367-B604A3D87BA9}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
