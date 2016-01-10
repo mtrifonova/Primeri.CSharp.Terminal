@@ -36,14 +36,21 @@ namespace ListExplore
 				// Преглед на List
 				if ( _userinput.Contains("show"))
 					{
-						for ( int i = 0; i < _list.Count; i++ )
+					Console.Write(" Списък: ");
+					foreach( int value in  _list )   // създаваме променлива value и казваме да обходи целия масив list и да запише ст-ст в value
 						{
-							Console.Write("_List: ");
-							Console.Write(_list[i]);
-						if ( i != _list.Count - 1)   Console.Write( ",");
+						Console.Write ( value.ToString() + "," );
 						}
-							Console.WriteLine();
 					}
+//					{
+//						for ( int i = 0; i < _list.Count; i++ )
+//						{
+//							Console.Write("_List: ");
+//							Console.Write(_list[i]);
+//						if ( i != _list.Count - 1)   Console.Write( ",");
+//						}
+								Console.WriteLine();
+						
 
 
 				// размер на list
